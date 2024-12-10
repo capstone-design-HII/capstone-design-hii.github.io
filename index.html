@@ -1,105 +1,146 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"/>
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>capstone-design-hii</title>
-
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="./css/album.css" rel="stylesheet">
-  </head>
+    <style>
+        /* New styles for a geeky look */
+        body {
+            background-color: #f8f9fa; /* Light background for contrast */
+            color: #333; /* Dark text for readability */
+        }
 
-  <body>
+        header {
+            background-color: #A7C6ED; /* UNC light blue */
+            color: #fff; /* White text */
+        }
 
-    <header>
-      <div class="collapse bg-dark" id="navbarHeader">
+        .navbar {
+            background-color: #A7C6ED; /* UNC light blue */
+        }
+
+        .jumbotron {
+            background-color: #fff; /* White background for jumbotron */
+            color: #333; /* Dark text */
+            border: 2px solid #A7C6ED; /* Light blue border */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .event-section {
+            background-color: #A7C6ED; /* Light blue background */
+            color: #fff; /* White text */
+            padding: 20px; /* Padding for sections */
+            border-radius: 10px; /* Rounded corners */
+            margin: 20px 0; /* Margin for spacing */
+            text-align: center; /* Center text */
+        }
+
+        .event-image {
+            border-radius: 8px; /* Rounded corners for images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .group-item {
+            background-color: #fff; /* White background for group items */
+            border: 1px solid #A7C6ED; /* Light blue border */
+            border-radius: 10px; /* Rounded corners */
+            padding: 15px; /* Padding for group items */
+            margin: 10px; /* Margin for spacing */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        footer {
+            background-color: #A7C6ED; /* UNC light blue */
+            color: #fff; /* White text */
+            padding: 10px 0; /* Padding for footer */
+            text-align: center; /* Center text */
+        }
+
+        h2 {
+            font-family: 'Arial', sans-serif;
+            color: #333; /* Dark text for headings */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">About</h4>
+                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Email me</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Email me</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-      
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-          <div class="navbar">
-            <p>Mechanical Engineering Capstone Design, HII, Dalian Maritime University</p>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main role="main">
-
-      <div class="top-gif"> 
-        <img src="./imgs/HII-DMU.gif" style="vertical-align: top; width: 100%;"/>
-      </div>
-
-       <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Mechanical Engineering Projects Showcase F2024-S2025</h1>
-          <p class="lead text-muted">We are senior students of COHORT 2021, majored in Mechanical Engineering at Houston International Institute, Dalian Maritime University. Welcome to Showcase of Senior Capstone Design! We invite you to spend some time getting to know this year's engineering capstone design projects and teams.</p>
-        </div>
-      </section>
-
-      <style>
-.group-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.group-item {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-</style>
-  <section class="event-section">
-    <h2>2024.11.25 Lab Training Session</h2>
-    <div class="event-images">
-      <img src="https://s21.ax1x.com/2024/12/10/pAHtEQI.jpg" class="event-image" alt="Lab Training Session Image 1"/>
-      <img src="https://s21.ax1x.com/2024/12/10/pAHtZOP.jpg" class="event-image" alt="Lab Training Session Image 2"/>
     </div>
-  </section>
 
-  <section class="event-section">
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <div class="navbar">
+                <p>Mechanical Engineering Capstone Design, HII, Dalian Maritime University</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main role="main" class="container-scaled"> <!-- Use the new container class -->
+    <div class="top-gif">
+        <img src="./imgs/HII-DMU.gif" style="vertical-align: top; width: 100%;"/>
+    </div>
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Mechanical Engineering Projects Showcase F2024-S2025</h1>
+            <p class="lead text-muted">We are senior students of COHORT 2021, majored in Mechanical Engineering at Houston International Institute, Dalian Maritime University. Welcome to Showcase of Senior Capstone Design! We invite you to spend some time getting to know this year's engineering capstone design projects and teams.</p>
+        </div>
+    </section>
+
+    <!-- Event sections and other content go here -->
+    <section class="event-section">
+      <h2>2024.12.09 Capstone Design Timeline Overview for DMU&UH Tasks</h2>
+      <div class="event-images">
+        <img src="https://s21.ax1x.com/2024/12/10/pAHtWkD.jpg" class="event-image" alt="Capstone Design Timeline Image 1"/>
+        <img src="https://s21.ax1x.com/2024/12/10/pAHtHnP.jpg" class="event-image" alt="Capstone Design Timeline Image 2"/>
+      </div>
+    </section>
+  
+    <section class="event-section">
     <h2>2024.12.02 Design Review Presentation</h2>
     <div class="event-images">
       <img src="https://s21.ax1x.com/2024/12/10/pAHtmef.jpg" class="event-image" alt="Design Review Presentation Image 1"/>
       <img src="https://s21.ax1x.com/2024/12/10/pAHtnw8.jpg" class="event-image" alt="Design Review Presentation Image 2"/>
     </div>
-  </section>
+    </section>
+  
+    <section class="event-section">
+        <h2>2024.11.25 Lab Training Session</h2>
+        <div class="event-images">
+            <img src="https://s21.ax1x.com/2024/12/10/pAHtEQI.jpg" class="event-image" alt="Lab Training Session Image 1"/>
+            <img src="https://s21.ax1x.com/2024/12/10/pAHtZOP.jpg" class="event-image" alt="Lab Training Session Image 2"/>
+        </div>
+    </section>
 
-  <section class="event-section">
-    <h2>2024.12.09 Capstone Design Timeline Overview for DMU&UH Tasks</h2>
-    <div class="event-images">
-      <img src="https://s21.ax1x.com/2024/12/10/pAHtWkD.jpg" class="event-image" alt="Capstone Design Timeline Image 1"/>
-      <img src="https://s21.ax1x.com/2024/12/10/pAHtHnP.jpg" class="event-image" alt="Capstone Design Timeline Image 2"/>
-    </div>
-  </section>
-
+  
   <style>
     .event-section {
       margin: 20px 0;
@@ -511,18 +552,16 @@
     </main>
 
     <footer class="text-muted">
-      <div class="container">
+    <div class="container">
         <a href="https://www.me.uh.edu/">A special thanks goes to the Department of Mechanical Engineering at the University of Houston, and to Dr. C. Chang and Dr. X. Chen for their kind support and guidance throughout the course</a>
-      </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')</script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/holder.min.js"></script>
-  </body>
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')</script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/holder.min.js"></script>
+</body>
 </html>
