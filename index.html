@@ -3,75 +3,117 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"/>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Mechanical Engineering Capstone Design Projects Showcase">
+    <meta name="author" content="HII DMU">
     <title>capstone-design-hii</title>
+    
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    <!-- Custom styles -->
     <link href="./css/album.css" rel="stylesheet">
+    
     <style>
-        /* New styles for a geeky look */
         body {
-            background-color: #f8f9fa; /* Light background for contrast */
-            color: #333; /* Dark text for readability */
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Arial', sans-serif;
         }
 
         header {
-            background-color: #A7C6ED; /* UNC light blue */
-            color: #fff; /* White text */
+            background-color: #A7C6ED;
+            color: #fff;
         }
 
         .navbar {
-            background-color: #A7C6ED; /* UNC light blue */
+            background-color: #A7C6ED;
+            padding: 1rem;
+        }
+
+        .navbar p {
+            margin: 0;
+            color: #fff;
         }
 
         .jumbotron {
-            background-color: #fff; /* White background for jumbotron */
-            color: #333; /* Dark text */
-            border: 2px solid #A7C6ED; /* Light blue border */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            background-color: #fff;
+            color: #333;
+            border: 2px solid #A7C6ED;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+            padding: 2rem;
         }
 
         .event-section {
-            background-color: #A7C6ED; /* Light blue background */
-            color: #fff; /* White text */
-            padding: 20px; /* Padding for sections */
-            border-radius: 10px; /* Rounded corners */
-            margin: 20px 0; /* Margin for spacing */
-            text-align: center; /* Center text */
+            background-color: #A7C6ED;
+            color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .event-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 0;
         }
 
         .event-image {
-            border-radius: 8px; /* Rounded corners for images */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            width: 45%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .event-image:hover {
+            transform: scale(1.02);
+        }
+
+        .group-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
         }
 
         .group-item {
-            background-color: #fff; /* White background for group items */
-            border: 1px solid #A7C6ED; /* Light blue border */
-            border-radius: 10px; /* Rounded corners */
-            padding: 15px; /* Padding for group items */
-            margin: 10px; /* Margin for spacing */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            background-color: #fff;
+            border: 1px solid #A7C6ED;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .group-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            background-color: #A7C6ED; /* UNC light blue */
-            color: #fff; /* White text */
-            padding: 10px 0; /* Padding for footer */
-            text-align: center; /* Center text */
+            background-color: #A7C6ED;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 2rem;
         }
 
-        h2 {
-            font-family: 'Arial', sans-serif;
-            color: #333; /* Dark text for headings */
-            margin-bottom: 10px;
+        @media (max-width: 768px) {
+            .event-image {
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .group-item {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
-
 <body>
 <header>
     <div class="collapse bg-dark" id="navbarHeader">
@@ -103,9 +145,9 @@
     </div>
 </header>
 
-<main role="main" class="container-scaled"> <!-- Use the new container class -->
+<main role="main" class="container-scaled">
     <div class="top-gif">
-        <img src="./imgs/HII-DMU.gif" style="vertical-align: top; width: 100%;"/>
+        <img src="./imgs/HII-DMU.gif" style="vertical-align: top; width: 100%;" alt="HII-DMU Banner"/>
     </div>
 
     <section class="jumbotron text-center">
@@ -115,7 +157,8 @@
         </div>
     </section>
 
-    <!-- Event sections and other content go here -->
+    
+<!-- Event sections and other content go here -->
     <section class="event-section">
       <h2>2024.12.09 Capstone Design Timeline Overview for DMU&UH Tasks</h2>
       <div class="event-images">
@@ -552,16 +595,18 @@
     </main>
 
     <footer class="text-muted">
-    <div class="container">
-        <a href="https://www.me.uh.edu/">A special thanks goes to the Department of Mechanical Engineering at the University of Houston, and to Dr. C. Chang and Dr. X. Chen for their kind support and guidance throughout the course</a>
-    </div>
-</footer>
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Mechanical Engineering Capstone Design © Houston International Institute, Dalian Maritime University</p>
+            <p>Contact us at: <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+    </footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')</script>
-<script src="./js/popper.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/holder.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
